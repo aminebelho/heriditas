@@ -2,16 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
-  margin: 0;
-  font-family: proxima_novaregular, Montserrat, Arial, helvetica neue, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("./assets/image1.jpg");
-  backdrop-filter: blur(10px); */
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

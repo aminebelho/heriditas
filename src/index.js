@@ -32,7 +32,7 @@ const BackgroundChanger = () => {
 
   return (
     <div
-      className="bg-lazy bg-cover bg-center fixed top-0 left-0 w-full h-full"
+      className="bg-lazy bg-cover bg-center top-0 left-0 w-full h-full"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <React.StrictMode>
