@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './components/navbar/navbar'
 import Home from './components/home/home'
 import Projects from './components/projects/projects';
@@ -9,11 +8,11 @@ import About from './components/about/about';
 
 function App() {
   return (
-    <div className="App relative">
+    <div className="App relative w-full">
       <div className="navbar">
         <Navbar></Navbar>
       </div>
-      <div className="first-section h-screen backdrop-blur-md" id='home'>
+      <div className="first-section h-screen backdrop-blur-md min-h-screen" id='home'>
         <Home></Home>
       </div>
       <div className='second-section' id='projects'>
