@@ -46,12 +46,12 @@ const socialMediaData = [
 const Contact = () => {
   return (
     <div className="p-4 globe relative z-10 bg-black bg-opacity-90 mt-2xl pb-2xl text-white overflow-hidden md:overflow-visible">
-      <div className="title text-2xl text-center tracking-widest p-2">
+      <div className="title text-2xl text-center tracking-widest uppercase p-2">
         Contacts
       </div>
       <div className="contact">
         <div class="p-4">
-          <div className="flex justify-center text-center text-base sm:text-lg p-2">Suivez nous sur nos réseaux sociaux !</div>
+          <div className="flex justify-center text-center text-gray-300 text-base sm:text-lg ">Suivez nous sur nos réseaux sociaux !</div>
           <div class="flex justify-center p-2 space-x-6">
             {socialMediaData.map((socialMedia, index) => (
               <a

@@ -3,6 +3,7 @@ import Navbar from './components/navbar/navbar'
 import Home from './components/home/home'
 import Projects from './components/projects/projects';
 import Contact from './components/contact/contact'
+import About from './components/about/about';
 
 
 
@@ -19,6 +20,9 @@ function App() {
         <Projects></Projects>
       </div>
       <div className="third-section mt-20 ">
+        <About></About>
+      </div> 
+      <div className="fourth-section mt-20 ">
         <Contact></Contact>
       </div>  
     </div>
