@@ -1,8 +1,8 @@
 #root {
-  height: 200vh;
+  /* height: 200vh; */
 }
 .App {
-  height: 200vh;
+  /* height: 200vh; */
   width: 100%;
   /* background-color: #f1f1f1ff; */
 
@@ -14,9 +14,6 @@
 }
 
 
-.second-section {
-  background-color: #d04a4a;
-}
 /* .App {
   text-align: center;  
   font-family: proxima_novaregular, Montserrat, Arial, helvetica neue, sans-serif;

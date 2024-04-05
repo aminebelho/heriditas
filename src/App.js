@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar/navbar'
 import Home from './components/home/home'
+import Projects from './components/projects/projects';
 import Contact from './components/contact/contact'
 
 
@@ -14,12 +15,12 @@ function App() {
       <div className="first-section h-screen backdrop-blur-md ">
         <Home></Home>
       </div>
-      <div className="second-section ">
+      <div className='second-section'>
+        <Projects></Projects>
+      </div>
+      <div className="third-section mt-20 ">
         <Contact></Contact>
       </div>  
-      {/* <section className="third-section">
-        <Contact></Contact>  
-      </section>   */}
     </div>
     
   );
