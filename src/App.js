@@ -13,16 +13,16 @@ function App() {
       <div className="navbar">
         <Navbar></Navbar>
       </div>
-      <div className="first-section h-screen backdrop-blur-md ">
+      <div className="first-section h-screen backdrop-blur-md" id='home'>
         <Home></Home>
       </div>
-      <div className='second-section'>
+      <div className='second-section' id='projects'>
         <Projects></Projects>
       </div>
-      <div className="third-section mt-20 ">
+      <div className="third-section mt-20 " id='about'>
         <About></About>
       </div> 
-      <div className="fourth-section mt-20 ">
+      <div className="fourth-section mt-20 " id='contact'>
         <Contact></Contact>
       </div>  
     </div>

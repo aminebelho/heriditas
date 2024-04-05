@@ -1,20 +1,27 @@
-import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Patriot from '../../assets/patriot_studio.jpg'
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Patriot from "../../assets/patriot_studio.jpg";
 
 const navigation = [
-  { name: 'PROJETS', href: '#', current: false },
-  { name: 'À PROPOS', href: '#', current: false },
-  { name: 'CONTACT', href: '#', current: false },
-]
+  { name: "PROJETS", href: "#", sectionID: "projects", current: false },
+  { name: "À PROPOS", href: "#", sectionID: "about", current: false },
+  { name: "CONTACT", href: "#", sectionID: "contact", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
+}
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: "smooth" });
 }
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-black tracking-widest z-50 w-full absolute top-">
+    <Disclosure
+      as="nav"
+      className="bg-black tracking-widest z-50 w-full absolute top-"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -37,6 +44,7 @@ export default function Example() {
                     className="h-8 w-auto"
                     src={Patriot}
                     alt="Your Company"
+                    onClick={() => scrollToSection("home")}
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -45,8 +53,9 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={() => scrollToSection(item.sectionID)}
                         className="text-gray-300 hover:bg-stone-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
@@ -54,7 +63,6 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -65,11 +73,14 @@ export default function Example() {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  onClick={() => scrollToSection(item.sectionID)}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-stone-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-stone-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -79,5 +90,5 @@ export default function Example() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }
