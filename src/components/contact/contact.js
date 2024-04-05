@@ -50,9 +50,9 @@ const Contact = () => {
         Contacts
       </div>
       <div className="contact">
-        <div class="p-4">
+        <div className="p-4">
           <div className="flex justify-center text-center text-gray-300 text-base sm:text-lg ">Suivez nous sur nos réseaux sociaux !</div>
-          <div class="flex justify-center p-2 space-x-6">
+          <div className="flex justify-center p-2 space-x-6">
             {socialMediaData.map((socialMedia, index) => (
               <a
                 href={socialMedia.url} 
