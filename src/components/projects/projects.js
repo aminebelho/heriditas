@@ -29,7 +29,7 @@ const Projects = () => {
       </div>
       <div className="prj grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 p-4">
         {projects.map((projects, index) => (
-          <div className="... sm:text-lg p-4 sm:px-24 sm:px-4">
+          <div className="... sm:text-lg p-4 sm:px-24 sm:px-4" key={index}>
             <img src={projects.img} alt="" className="object-cover object-center w-full h-64 max-w-full rounded-lg sm:rounded-xl sm:p-2 p-1 scale-100 hover:scale-100 ease-in ease-out duration-300 hover:sm:scale-110 cursor-pointer"/>
             <div className="flex justify-center text-lg text-gray-300 sm:p-2 px-4 py-2">{projects.name}</div>
 
