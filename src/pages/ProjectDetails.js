@@ -1,66 +1,89 @@
 import React from "react";
-import Navbar from '../components/navbar'
+import { useEffect } from "react";
+import Navbar from "../components/navbar";
 import { useParams } from "react-router-dom";
-import Prj1 from '../assets/prj1.jpg'
-import Prj2 from '../assets/prj2.jpg'
-import Prj3 from '../assets/prj3.jpg'
-
+import Prj1 from "../assets/prj1.jpg";
+import Prj2 from "../assets/prj2.jpg";
+import Prj3 from "../assets/prj3.jpg";
+import First from "../components/first";
 
 const navigation = [
-  { name: "Effectuer une visite 3D", href: "#", sectionID: "", current: false },
-  { name: "Effectuer une visite 360", href: "#", sectionID: "", current: false }
+  { name: "Effectuer une visite 3D", href: "#", sectionID: "3d", current: false },
+  {
+    name: "Effectuer une visite 360",
+    href: "#",
+    sectionID: "360v",
+    current: false,
+  },
 ];
 
-
-
-
 function ProjectDetails() {
+  const params = useParams();
 
-const params = useParams()
+  let projectData = null;
 
-let projectData = null
+  switch (params.id) {
+    case "0":
+      projectData = {
+        name: "Mosquée El-Wartalani (ex-église Sainte Marcienne)",
+        img: Prj1,
+        description: "In the quiet embrace of dawn, birdsongs weave through the morning air, whispering secrets to the waking world. Nature's symphony orchestrates the beginning of another day, alive with possibility.",
+        v3d: First,
+      };
+      break;
 
-    switch (params.id) {
-        case "0":
-            projectData = {
-              name: "Projet de numérisation de la mosquée El-Wartalani (ex église Sainte Marcienne)",
-              img: Prj1,
-              description: "éf",
-            }
-            break
-        
-        case "1":
-            projectData = {
-              name: "Projet de numérisation de la mosquée El-Wartalani (ex église Sainte Marcienne)",
-              img: Prj2,
-              description: "n",
-            }
-            break
-        
-        default:
-            break
-    }
+    case "1":
+      projectData = {
+        name: "Mosquée El-Wartalani (ex église Sainte Marcienne)",
+        img: Prj2,
+        description: "voici la description de ce projet eidnsjxds uineoin iuen",
+        v3d: First,
+      };
+      break;
 
-    return (
-      <div className="relative w-full">
+    case "2":
+      projectData = {
+        name: "Mosquée Jamaa El-Kebir (mosquée malekite d'Alger)",
+        img: Prj3,
+        description: "this is the description of the project",
+        v3d: First,
+      };
+      break;
+
+    default:
+      break;
+  }
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
+  return (
+    <div className="h-screen">
+      <div className="bg-lazy bg-cover bg-center top-0 left-0 w-full h-full">
         <div className="navbar">
           <Navbar navigation={navigation}></Navbar>
         </div>
-        <div className="p-2">
-        <p>The project ID is {params.id}</p>
-            {
-                projectData != null ?
-                <>
-                    <img className="h-screen backdrop-blur-md min-h-screen" src={projectData.img}/>
-
-                    <h2>{projectData.name}</h2>
-                    <div> {projectData.description}</div>
-                </>
-                : ''
-            }
+        <div
+          className="flex justify-start items-center min-h-full sm:pb-2 pt-global-header md:pb-8 relative z-10 md:grid md:items-center md:min-h-[720px] lg:min-h-[780px] md:max-h-[90dvh] mx-auto overflow-hidden bg-cover [@media(min-width:711px)]"
+          style={{
+            backgroundImage: `url(${projectData.img})`,
+            height: "100vh",
+            backgroundSize: "cover", // Set background size to cover
+            backgroundPosition: "center", // Center the background image
+          }}
+        >
+          <div className="w-4/5 sm:w-2/5 bg-black bg-opacity-60 rounded-r-lg  text-white px-4 py-2 sm:px-16 sm:py-8">
+            <div className="text-xl mb-5">{projectData.name}</div>
+            <div>{projectData.description}</div>
+          </div>
+        </div>
+        <div className="bg-black bg-opacity-90 p-2 sm:p-4" id="3d">
+            <div className="text-xl sm:text-2xl text-start sm:text-center text-gray-300 sm:p-8 p-4">Bienvenue dans la visite 3D du Projet de numérisation "{projectData.name}"</div>
+            <projectData.v3d />
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
 
 export default ProjectDetails;

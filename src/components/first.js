@@ -2,7 +2,7 @@ import React from "react";
 
 function First() {
   return (
-    <div>
+    <div className=" sm:px-28 px-4 sm:py-4 py-2 sm:h-96 h-52">
       <iframe
         width="100%"
         height="100%"

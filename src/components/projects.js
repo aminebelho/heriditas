@@ -34,7 +34,7 @@ const Projects = () => {
             key={index}
             to={{
               pathname: `/project/${index}`,
-              state: { projectData: project }, // Pass project data as state
+              state: { projectData: project },
             }}
           >
             <div className="... sm:text-lg p-4 sm:px-24 sm:px-4">
