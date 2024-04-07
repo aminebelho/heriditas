@@ -1,32 +1,13 @@
-import Navbar from './components/navbar/navbar'
-import Home from './components/home/home'
-import Projects from './components/projects/projects';
-import Contact from './components/contact/contact'
-import About from './components/about/about';
-
+import Router from './components/router';
 
 
 function App() {
+
   return (
-    <div className="App relative w-full">
-      <div className="navbar">
-        <Navbar></Navbar>
+      <div className='App relative w-full h-full top-0 left-0'>
+        <Router />
       </div>
-      <div className="first-section h-screen backdrop-blur-md min-h-screen" id='home'>
-        <Home></Home>
-      </div>
-      <div className='second-section' id='projects'>
-        <Projects></Projects>
-      </div>
-      <div className="third-section mt-20 " id='about'>
-        <About></About>
-      </div> 
-      <div className="fourth-section mt-20 " id='contact'>
-        <Contact></Contact>
-      </div>  
-    </div>
-    
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,26 +1,21 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Patriot from "../../assets/patriot_studio.jpg";
-
-const navigation = [
-  { name: "PROJETS", href: "#", sectionID: "projects", current: false },
-  { name: "À PROPOS", href: "#", sectionID: "about", current: false },
-  { name: "CONTACT", href: "#", sectionID: "contact", current: false },
-];
+import Patriot from "../assets/patriot_studio.jpg";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
+
 function scrollToSection(sectionId) {
   var section = document.getElementById(sectionId);
   section.scrollIntoView({ behavior: "smooth" });
 }
 
-export default function Example() {
+export default function Example({ navigation }) {
   return (
     <Disclosure
       as="nav"
-      className="bg-black tracking-widest z-50 w-full absolute top-"
+      className="bg-black tracking-widest z-50 w-full absolute top-0"
     >
       {({ open }) => (
         <>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Heriditas from '../../assets/heriditas_logo.jpg'
+import Heriditas from '../assets/heriditas_logo.jpg'
 
 const Home = () => {
   return (
