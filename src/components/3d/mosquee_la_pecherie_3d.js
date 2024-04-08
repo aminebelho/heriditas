@@ -1,6 +1,6 @@
 import React from "react";
 
-function First() {
+function First3D() {
   return (
     <div className=" sm:px-28 px-4 sm:py-4 py-2 sm:h-96 h-52">
       <iframe
@@ -13,4 +13,4 @@ function First() {
   );
 }
 
-export default First;
+export default First3D;
