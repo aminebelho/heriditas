@@ -4,6 +4,9 @@ import Navbar from "../components/navbar";
 import { useParams } from "react-router-dom";
 import projectsData from "../projectsData";
 import { extraNavigationData } from "../navigationData";
+import ThreeSixtySection from "../components/v360";
+import ThreeDSection from "../components/v3d";
+import Footer from "../components/footer";
 
 const navigation = extraNavigationData
 
@@ -47,35 +50,14 @@ function ProjectDetails() {
           </div>
         </div>
         {projectData.v3d && ( // Conditional rendering of 360 section
-          <div className="bg-black bg-opacity-90 p-2 sm:p-4" id="3d">
-            <div className="text-xl sm:text-2xl text-start sm:text-center text-gray-300 sm:p-8 p-4">
-              Visite 3d du Projet de numérisation "{projectData.name}"
-            </div>
-            <div className=" sm:px-28 px-4 sm:py-4 py-2 sm:h-96 h-52">
-              <iframe
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                src={projectData.v3d}
-              ></iframe>
-            </div>
-          </div>
+        <ThreeDSection projectData={projectData} />
         )}
-        {projectData.v360 && ( // Conditional rendering of 360 section
-          <div className="bg-black bg-opacity-90 p-2 sm:p-4" id="360v">
-            <div className="text-xl sm:text-2xl text-start sm:text-center text-gray-300 sm:p-8 p-4">
-              Visite 360 du Projet de numérisation "{projectData.name}"
-            </div>
-            <div className=" sm:px-28 px-4 sm:py-4 py-2 sm:h-96 h-52">
-              <iframe
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                src={projectData.v360}
-              ></iframe>
-            </div>
-          </div>
+         {projectData.v360 && (
+          <ThreeSixtySection projectData={projectData} /> // Use the new component
         )}
+        <div className="p-4 globe relative z-10 bg-black bg-opacity-90 mt-2xl pb-2xl text-white overflow-hidden md:overflow-visible">
+        <Footer />
+        </div>
       </div>
     </div>
   );

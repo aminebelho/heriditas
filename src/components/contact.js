@@ -52,7 +52,7 @@ const Contact = () => {
       <div className="contact">
         <div className="p-4">
           <div className="flex justify-center text-center text-gray-300 text-base sm:text-lg ">Suivez nous sur nos réseaux sociaux !</div>
-          <div className="flex justify-center p-2 space-x-6">
+          <div className="flex justify-center p-2 space-x-6 mb-8">
             {socialMediaData.map((socialMedia, index) => (
               <a
                 href={socialMedia.url} 
