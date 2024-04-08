@@ -9,14 +9,11 @@ import Home from '../components/home'
 import Projects from '../components/projects';
 import Contact from '../components/contact'
 import About from '../components/about';
+import { navigationData } from '../navigationData';
 
 const images = [im1, im2, im3, im4, im5];
 
-const navigation = [
-    { name: "PROJETS", href: "#", sectionID: "projects", current: false },
-    { name: "À PROPOS", href: "#", sectionID: "about", current: false },
-    { name: "CONTACT", href: "#", sectionID: "contact", current: false },
-  ];
+const navigation = navigationData
 
 const getRandomImage = () => {
   const randomIndex = Math.floor(Math.random() * images.length);

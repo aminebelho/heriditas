@@ -1,26 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Prj1 from "../assets/prj1.jpg";
-import Prj2 from "../assets/prj2.jpg";
-import Prj3 from "../assets/prj3.jpg";
+import projectsData from "../projectsData";
 
-const projects = [
-  {
-    name: "Projet de numérisation de la mosquée El-Wartalani (ex église Sainte Marcienne)",
-    img: Prj1,
-    description: "",
-  },
-  {
-    name: "Projet de numérisation de la mosquée Jamaa El-Jedid (mosquée hanafite d'Alger)",
-    img: Prj2,
-    description: "",
-  },
-  {
-    name: "Projet de numérisation de la mosquée Jamaa El-Kebir (mosquée malekite d'Alger)",
-    img: Prj3,
-    description: "",
-  },
-];
+
+const projects = projectsData
 
 const Projects = () => {
   return (
