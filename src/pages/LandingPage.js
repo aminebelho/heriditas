@@ -10,6 +10,7 @@ import Projects from '../components/projects';
 import Contact from '../components/contact'
 import About from '../components/about';
 import { navigationData } from '../navigationData';
+import MapComponent from '../components/map';
 
 const images = [im1, im2, im3, im4, im5];
 
@@ -62,10 +63,13 @@ const BackgroundChanger = () => {
           <div className='second-section' id='projects'>
             <Projects></Projects>
           </div>
-          <div className="third-section mt-20 " id='about'>
+          <div className='third-section mt-20' id='projects'>
+            <MapComponent></MapComponent>
+          </div>
+          <div className="fourth-section mt-20 " id='about'>
             <About></About>
           </div> 
-          <div className="fourth-section mt-20 " id='contact'>
+          <div className="fifth-section mt-20 " id='contact'>
             <Contact></Contact>
           </div>
       </div>

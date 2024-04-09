@@ -19,7 +19,7 @@ const navigationData = [
     }
   ];
   
-  const extraNavigationData = [
+  const detailsNavigationData = [
     {
       name: "Effectuer une visite 3D",
       href: "#",
@@ -33,6 +33,10 @@ const navigationData = [
       current: false
     }
   ];
+
+  const mapNavigationData = [
+  ];
+
   
-  export { navigationData, extraNavigationData };
+  export { navigationData, detailsNavigationData, mapNavigationData };
   

@@ -3,13 +3,13 @@ import { useEffect } from "react";
 import Navbar from "../components/navbar";
 import { useParams } from "react-router-dom";
 import projectsData from "../projectsData";
-import { extraNavigationData } from "../navigationData";
+import { detailsNavigationData } from "../navigationData";
 import ThreeSixtySection from "../components/v360";
 import ThreeDSection from "../components/v3d";
 import Footer from "../components/footer";
 import MapComponent from "../components/map";
 
-const navigation = extraNavigationData
+const navigation = detailsNavigationData
 
 function ProjectDetails() {
   const params = useParams();
@@ -56,9 +56,6 @@ function ProjectDetails() {
          {projectData.v360 && (
           <ThreeSixtySection projectData={projectData} /> // Use the new component
         )}
-        <div >
-          <MapComponent></MapComponent>
-        </div>
         <div className="p-4 globe relative z-10 bg-black bg-opacity-90 mt-2xl pb-2xl text-white overflow-hidden md:overflow-visible">
         <Footer />
         </div>

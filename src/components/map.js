@@ -1,24 +1,25 @@
-import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import React from "react";
 
 const MapComponent = () => {
   return (
-    <MapContainer center={[36.7764, 3.0588]} zoom={13} style={{ height: "100vh" }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <Marker position={[36.7764, 3.0588]}>
-        <Popup>
-          Jamaa El Jedid, Algiers
-        </Popup>
-      </Marker>
-      <Marker position={[36.7765, 3.0589]}>
-        <Popup>
-          Jamaa El Warlatani, Algiers
-        </Popup>
-      </Marker>
-    </MapContainer>
+    <div className="p-4 globe relative z-10 bg-black bg-opacity-90 mt-2xl pb-2xl text-white overflow-hidden md:overflow-visible">
+      <div className="title text-2xl text-center tracking-widest uppercase p-2">
+        Carte
+      </div>
+      <div className="map">
+        <div className="p-4">
+          <div className="flex justify-center p-2">
+            <iframe
+              className="w-full h-96 max-w-full rounded-lg sm:rounded-xl sm:p-2 p-1"
+              src="https://www.google.com/maps/d/u/0/embed?mid=1gd7Ybp40pHzH9sXeDpK_8skwPPs7FWA&amp;ehbc=2E312F&amp;noprof=1"
+              // width="640"
+              // height="480"
+            ></iframe>
+            
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
