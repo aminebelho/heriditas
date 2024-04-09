@@ -7,6 +7,7 @@ import { extraNavigationData } from "../navigationData";
 import ThreeSixtySection from "../components/v360";
 import ThreeDSection from "../components/v3d";
 import Footer from "../components/footer";
+import MapComponent from "../components/map";
 
 const navigation = extraNavigationData
 
@@ -55,6 +56,9 @@ function ProjectDetails() {
          {projectData.v360 && (
           <ThreeSixtySection projectData={projectData} /> // Use the new component
         )}
+        <div >
+          <MapComponent></MapComponent>
+        </div>
         <div className="p-4 globe relative z-10 bg-black bg-opacity-90 mt-2xl pb-2xl text-white overflow-hidden md:overflow-visible">
         <Footer />
         </div>

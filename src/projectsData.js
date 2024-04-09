@@ -17,7 +17,7 @@ const projectsData = [
       img: Prj2,
       description: "voici la description de ce projet eidnsjxds uineoin iuen",
       v3d: "https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:13380a2b23/mosqu%C3%A9e%20de%20la%20pecherie/mosqu%C3%A9e%20de%20la%20pecherie.html",
-      v360: "https://app.cloudpano.com/tours/zdvHys2KT"
+      v360: "https://kuula.co/share/collection/7cTNK?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
     },
     {
       id: "2",
