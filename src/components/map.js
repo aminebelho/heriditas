@@ -6,18 +6,13 @@ const MapComponent = () => {
       <div className="title text-2xl text-center tracking-widest uppercase p-2">
         Carte
       </div>
-      <div className="map">
         <div className="p-4">
           <div className="flex justify-center p-2">
             <iframe
               className="w-full h-96 max-w-full rounded-lg sm:rounded-xl sm:p-2 p-1"
               src="https://www.google.com/maps/d/u/0/embed?mid=1gd7Ybp40pHzH9sXeDpK_8skwPPs7FWA&amp;ehbc=2E312F&amp;noprof=1"
-              // width="640"
-              // height="480"
             ></iframe>
-            
           </div>
-        </div>
       </div>
     </div>
   );

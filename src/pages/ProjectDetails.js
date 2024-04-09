@@ -7,7 +7,6 @@ import { detailsNavigationData } from "../navigationData";
 import ThreeSixtySection from "../components/v360";
 import ThreeDSection from "../components/v3d";
 import Footer from "../components/footer";
-import MapComponent from "../components/map";
 
 const navigation = detailsNavigationData
 
@@ -23,7 +22,7 @@ function ProjectDetails() {
   return (
     <div className="h-screen">
       <div className="bg-lazy bg-cover bg-center top-0 left-0 w-full h-full">
-        <div className="navbar">
+        <div >
           <Navbar
             navigation={navigation.filter((item) => {
               if (item.sectionID === "3d" && !projectData.v3d) {

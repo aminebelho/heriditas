@@ -8,10 +8,10 @@ const projects = projectsData
 const Projects = () => {
   return (
     <div className="p-4 globe relative z-10 bg-black bg-opacity-90 mt-2xl pb-2xl text-white overflow-hidden md:overflow-visible">
-      <div className="title text-2xl text-center tracking-widest uppercase p-2">
+      <div className="text-2xl text-center tracking-widest uppercase p-2">
         Projets
       </div>
-      <div className="prj grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 p-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 p-4">
         {projects.map((project, index) => (
           <Link
             key={index}

@@ -57,19 +57,19 @@ const BackgroundChanger = () => {
     >
       <div ref={appRef}>
           <Navbar navigation={navigation}></Navbar>
-          <div className="first-section h-screen backdrop-blur-md min-h-screen" id='home'>
+          <div className=" h-screen backdrop-blur-md min-h-screen" id='home'>
             <Home></Home>
           </div>
-          <div className='second-section' id='projects'>
+          <div  id='projects'>
             <Projects></Projects>
           </div>
-          <div className='third-section mt-20' id='projects'>
+          <div className='mt-20' id='carte'>
             <MapComponent></MapComponent>
           </div>
-          <div className="fourth-section mt-20 " id='about'>
+          <div className="mt-20 " id='about'>
             <About></About>
           </div> 
-          <div className="fifth-section mt-20 " id='contact'>
+          <div className="mt-20 " id='contact'>
             <Contact></Contact>
           </div>
       </div>
