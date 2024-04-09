@@ -9,7 +9,7 @@ const MapComponent = () => {
         <div className="p-4">
           <div className="flex justify-center p-2">
             <iframe
-              className="w-full h-96 max-w-full rounded-lg sm:rounded-xl sm:p-2 p-1"
+              className="w-full h-96 max-w-full rounded-lg sm:rounded-xl px-4 py-2 sm:px-24"
               src="https://www.google.com/maps/d/u/0/embed?mid=1gd7Ybp40pHzH9sXeDpK_8skwPPs7FWA&amp;ehbc=2E312F&amp;noprof=1"
             ></iframe>
           </div>

@@ -6,6 +6,12 @@ const navigationData = [
       current: false
     },
     {
+      name: "CARTE",
+      href: "#",
+      sectionID: "carte",
+      current: false
+    },
+    {
       name: "À PROPOS",
       href: "#",
       sectionID: "about",
