@@ -1,4 +1,10 @@
 const navigationData = [
+  {
+    name: "ACCUEIL",
+    href: "#",
+    sectionID: "home",
+    current: false
+  },
     {
       name: "PROJETS",
       href: "#",
@@ -26,6 +32,12 @@ const navigationData = [
   ];
   
   const detailsNavigationData = [
+    {
+      name: "Accueil",
+      href: "/",
+      sectionID: "home",
+      current: false
+    },
     {
       name: "Effectuer une visite 3D",
       href: "#",
