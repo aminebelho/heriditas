@@ -19,7 +19,7 @@ const projectsData = [
     description:
       "Djamaâ el Djedid est une des mosquées historiques d'Alger, située dans le quartier de la basse Casbah à côté de la place des martyrs. Elle a été édifiée en 1660 par les janissaires ottomans dans le style mauresque. Sa proximité avec la mer lui valut aussi son surnom de Mosquée de la Pêcherie. Elle est construite en pierre, marbre, brique et plâtre, et se distingue par son architecture singulière, véritable chef-d’œuvre illustrant parfaitement l’architecture islamique. La construction de cette mosquée vouée au rite Hanéfite (le plus répandu chez les musulmans turcs) fut financée par de généreux donateurs appartenant à la corporation des Bahâra (les pêcheurs). Son plan en forme de croix latine rappelle celui des églises byzantines nombreuses à Constantinople.",
     v3d: "https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:13380a2b23/mosqu%C3%A9e%20de%20la%20pecherie/mosqu%C3%A9e%20de%20la%20pecherie.html",
-    v360: "https://kuula.co/share/collection/7cTNK?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1",
+    v360: "https://kuula.co/share/collection/7cTNz?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1",
   },
   {
     id: "2",
